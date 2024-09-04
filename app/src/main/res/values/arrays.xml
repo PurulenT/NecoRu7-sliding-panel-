@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fish">
+        <item>Сом</item>
+        <item>Налим</item>
+        <item>Щука</item>
+        <item>Карась</item>
+    </string-array>
+    <string-array name="fish_content">
+        <item>Сом - крутая рыба</item>
+        <item>Налим - крутая рыба</item>
+        <item>Щука - крутая рыба</item>
+        <item>Карась - крутая рыба</item>
+    </string-array>
+    <array name="fish_image_array">
+        <item>@drawable/som</item>
+        <item>@drawable/nalim</item>
+        <item>@drawable/schuka</item>
+        <item>@drawable/karas</item>
+    </array>
+
+    <string-array name="na_fish">
+        <item>naСом</item>
+        <item>naНалим</item>
+    </string-array>
+    <string-array name="na_fish_content">
+        <item>naСом - крутая рыба</item>
+        <item>naНалим - крутая рыба</item>
+    </string-array>
+    <array name="na_fish_image_array">
+        <item>@drawable/som</item>
+        <item>@drawable/nalim</item>
+    </array>
+
+
+</resources>
