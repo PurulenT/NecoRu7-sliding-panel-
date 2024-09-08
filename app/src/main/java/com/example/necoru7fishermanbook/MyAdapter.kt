@@ -24,14 +24,15 @@ class MyAdapter (listArray:ArrayList<ListItem>, context:Context) :
         fun bind(listItem: ListItem, context: Context)
         {
             tvTitle.text = listItem.title_text
-            tvContent.text = listItem.content_text
+            var tvCon = listItem.content_text.substring(0,100) + "..."
+            tvContent.text = tvCon
             im.setImageResource(listItem.image_id)
             itemView.setOnClickListener()
             {
                 Toast.makeText(context, "Clicked: ${tvTitle.text}", Toast.LENGTH_SHORT).show()
                 val i = Intent(context, ContentActivity::class.java).apply {
                     putExtra("title", tvTitle.text.toString())
-                    putExtra("content", tvContent.text.toString())
+                    putExtra("content", listItem.content_text)
                     putExtra("image", listItem.image_id)
                 }
                 context.startActivity(i)

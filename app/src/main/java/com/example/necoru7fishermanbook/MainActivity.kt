@@ -4,7 +4,10 @@ import android.content.res.TypedArray
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
@@ -54,8 +57,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.id_history -> Toast.makeText(this, "History selected", Toast.LENGTH_SHORT).show()
 
         }
-
-
+        var drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
+        drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
 
